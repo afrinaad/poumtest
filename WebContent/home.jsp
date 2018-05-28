@@ -23,7 +23,7 @@
 							<a href="home.jsp"  class="current-page-item">Home</a>
 							<a href="query.jsp">PlantViz</a>
 							<a href="howto.html">How To</a>
-							<a href="aboutus.html">About</a>
+							<a href="aboutus.html">About Us</a>
 						</nav>
 					</header>
 				

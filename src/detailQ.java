@@ -196,7 +196,7 @@ public class detailQ extends HttpServlet {
 			ResultSet rq = qexec.execSelect();
 			
 			//print out result in console
-			//ResultSetFormatter.out(System.out, rq, query);
+			ResultSetFormatter.out(System.out, rq, query);
 			
 			//iterate result from SPARQL query
 			while (rq.hasNext()) {

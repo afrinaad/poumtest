@@ -100,8 +100,8 @@ The workflow is as shown below:
 					<section class="left-content">
 						<h2>QUERY</h2>
 						<p style="line-height: 1.3">
-						In PlantViz's query tool, users are able to search on any of parameters available from the drop-down menu. <br/>
-						Choose any parameters, key in search keyword or choose from options given, then click <b>Search</b> to perform the query.
+						In PlantViz's query tool, users are able to search on any of given parameters available in the drop-down menu. <br/>
+						Choose any parameter, key in a search keyword or choose from the options given, and click <b>Search</b> to perform the query.
 						</p><br/>
 						
 							<form id="formquery" action="queryD" method="post">

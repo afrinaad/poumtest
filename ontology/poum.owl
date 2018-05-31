@@ -3,7 +3,7 @@
      xml:base="http://103.18.1.10:8080/plantdb/ontology/plantont"
      xmlns:plantont1="http://103.18.1.10:8080/plantdb/ontology/plantont#"
      xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
-     xmlns:plantont="http://localhost:8080/plantdb/ontology/plantont#"
+     xmlns:plantont="http://103.18.1.10:8080/plantdb/ontology/plantont#"
      xmlns:owl="http://www.w3.org/2002/07/owl#"
      xmlns:xml="http://www.w3.org/XML/1998/namespace"
      xmlns:xsd="http://www.w3.org/2001/XMLSchema#"

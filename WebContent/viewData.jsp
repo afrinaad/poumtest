@@ -116,14 +116,14 @@ height:175px;
 <br/>
 <b>VISUALIZATION FEATURES</b>
 <font size="3"><ul>
-	<li>Hover on node to view node's label</li><br/>
-	<li>Hover on node to highlight links between node</li><br/>
-	<li>Click on expandable node to extend network graph or children node to shrink network graph</li><br/>
-	<li>Hover on node with sample ID to view thumbnail images of plant sample</li><br/>
-	<li>Click on "Sample" node to view full information of the plant sample</li><br/>
+	<li>Hover on the node to view node's label</li><br/>
+	<li>Hover on the node to highlight links between node</li><br/>
+	<li>Click on the expandable node to extend network graph or children node to shrink network graph</li><br/>
+	<li>Hover on the the node with sample ID to view thumbnail images of selected plant sample</li><br/>
+	<li>Click on the "Sample" node to view full information of the plant sample</li><br/>
 	</ul>
 	
-<br/>Visit How To page to learn how to use visualization features in PlantViz
+<br/>Please visit 'How To' page to learn the visualization features in PlantViz
 </font>
 </div>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>

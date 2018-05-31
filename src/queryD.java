@@ -118,7 +118,7 @@ public class queryD extends HttpServlet {
 		//read owl file
 		podb.read(in, "http://103.18.1.10:8080/plantdb/ontology/plantont");
 		
-		//System.out.println("podb : " + podb);
+		System.out.println("podb : " + podb);
 		
 		//get query from query.jsp
 		String dataquery1 = "";
@@ -210,6 +210,8 @@ public class queryD extends HttpServlet {
 
 		
 		queryStr.append(queryRequest);
+		
+		//System.out.println(queryRequest);
 		
 		Query query = QueryFactory.create(queryStr.toString());
 		

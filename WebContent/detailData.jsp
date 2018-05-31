@@ -39,8 +39,8 @@ th, td, tr {
 }
 
 img {
-	width : 50%;
-	height : 50%;
+	width : 75%;
+	height : 75%;
 }
 
 </style>
@@ -60,9 +60,9 @@ img {
 	
 %>
 
-<table width = "50%" border="1">
+<table width = "700" border="1">
   <tr>
-    <th width = "20%" align="left" bgcolor="#ede176"><b>Sample ID</b></th>
+    <th width = "150" align="left" bgcolor="#ede176"><b>Sample ID</b></th>
     <th align="left" bgcolor="#ede176"><b><%=inmap.get("sampleid")%></b></th>
   </tr>
   <tr>

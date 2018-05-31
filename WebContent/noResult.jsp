@@ -44,7 +44,7 @@
 					<br/>
 					<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 					<p>There is no record for <b> <%=request.getAttribute("optdata") %> : <%=request.getAttribute("dataquery") %> </b> in our database.<br/></p>
-					<p>Click <a href="#" onclick="window.location='http://localhost:8080/poum/query.jsp'; return false;"><b>HERE</b> </a>to try again. DO NOT click button <b>Back</b> to start a new query.</p>
+					<p>Click <a href="#" onclick="window.location='http://103.18.1.10:8080/plantviz/query.jsp'; return false;"><b>HERE</b> </a>to try again. DO NOT click button <b>Back</b> to start a new query.</p>
 					
 					</div>
 					</div>

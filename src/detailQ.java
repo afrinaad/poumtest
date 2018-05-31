@@ -102,7 +102,7 @@ public class detailQ extends HttpServlet {
 		
 		StringBuffer queryStr = new StringBuffer();
 		
-		//get poum.owl file from 10.3.204.173 server
+		//get poum.owl file from 103.18.1.10 server
 		InputStream in = FileManager.get().open("http://103.18.1.10:8080/plantviz/ont/poum.owl");
 		
 		//get poum.owl file from localhost server
@@ -196,7 +196,7 @@ public class detailQ extends HttpServlet {
 			ResultSet rq = qexec.execSelect();
 			
 			//print out result in console
-			ResultSetFormatter.out(System.out, rq, query);
+			//ResultSetFormatter.out(System.out, rq, query);
 			
 			//iterate result from SPARQL query
 			while (rq.hasNext()) {

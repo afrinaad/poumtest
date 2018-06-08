@@ -5,7 +5,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html xmlns:xlink="http://www.w3.org/1999/xlink">
 	<head>
-		<title>Plant Ontology | PlantViz</title>
+		<title>UM Plant Knowledge | PlantViz</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<!--5grid--><script src="css/5grid/viewport.js"></script><!--[if lt IE 9]><script src="css/5grid/ie.js"></script><![endif]--><link rel="stylesheet" href="css/5grid/core.css" />
 		<link rel="stylesheet" href="css/style.css" />
@@ -390,7 +390,8 @@ height:175px;
 				<div class="12u-first">
 
 					<div id="copyright">
-						This project is under Grant Num : RP038B-15AET</div>
+						This project is supported by the University of Malaya Research Grant (RP038B-15AET).
+						</div>
 
 				</div>
 			</div>

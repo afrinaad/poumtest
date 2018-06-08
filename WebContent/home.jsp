@@ -3,7 +3,7 @@
 <!DOCTYPE html PUBLIC "-//W3C//DTD HTML 4.01 Transitional//EN" "http://www.w3.org/TR/html4/loose.dtd">
 <html>
 	<head>
-		<title>Plant Ontology | Home</title>
+		<title>UM Plant Knowledge | Home</title>
 		<meta http-equiv="content-type" content="text/html; charset=utf-8" />
 		<meta name="description" content="" />
 		<meta name="keywords" content="" />
@@ -47,16 +47,15 @@
 				<div class="main-row">
 		
 						<article class="blog-post">
-							<h2>About UM Plant Knowledge</h2>
 							<p style="font-size:20px">
-							UM Plant Knowledge is a simple knowledge based system to represent knowledge of plants
-							 in Universiti Malaya in which data is retrieved from Plant Ontology Universiti Malaya (POUM), 
-							 an ontology that consists of data of 74 plant species and 222 plant samples.
-							This data is shown in graphical form in PlantViz; a plant visualization system.
+							UM Plant Knowledge is knowledge-based system for plants in University of Malaya. It consists of POUM (ontology-driven <b>P</b>lant <b>O</b>ntology <b>U</b>niversiti <b>M</b>alaya) and PlantViz (<b>P</b>lant <b>V</b>isualisation system).
 							</p>
 							<p style="font-size:20px">
-							PlantViz is a main component in UM Plant Knowledge. It is the graphical viewer for presenting data retrieved from POUM where data is displayed in form of network graph that highlight the connection between data.
-							PlantViz offers few features that allow users to interact directly with data. </p>
+							POUM consists of plant data and image of 222 plant samples from 43 species of 42 genus for trees and 31 species of 28 genus for shrubs that were collected in few areas in University of Malaya in year 2017. Ontological data for plants and samples of trees and shrubs is then integrated into the PlantViz. PlantViz provides a graphical user interface that enable users to query the POUM and a graphical viewer to display the results of the query in a form of network graph. The relationships between the data were shown in visualisation form that enables the users to infer the knowledge and correlation between the data easily.
+							</p>
+							<p style="font-size:20px">
+							This UM Plant Knowledge is suitable for the expert users such as Botanists and Researchers and also the novice users, with or without computer skills.
+							</p>
 							</br></br></br>
 							
 							<footer class="controls">
@@ -77,7 +76,7 @@
 				<div class="12u-first">
 
 					<div id="copyright">
-						This project is under Grant Num : RP038B-15AET
+						This project is supported by the University of Malaya Research Grant (RP038B-15AET).
 						</div>
 
 				</div>

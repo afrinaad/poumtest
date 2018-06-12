@@ -10,6 +10,22 @@
 		<!--[if IE 9]><link rel="stylesheet" href="css/style-ie9.css" /><![endif]-->
 	
 	<style>
+	figure {
+    display: inline-block;
+    margin:20px;
+    }
+    
+    figure img {
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+	}
+	
+    figure figcaption {
+    text-align: center;
+	font-size: smaller;
+	}
+   
 	b {
 	font-weight:bold;
 	}
@@ -33,7 +49,7 @@
 	li {
 	line-height: 120%;
 	}
-	
+		
 	/* Style the tab */
 	div.tab {
     overflow: hidden;
@@ -64,7 +80,7 @@
 
 	/* Style the tab content */
 	.tabcontent {
-    display: none;
+    display: inline;
     padding: 6px 12px;
     border: 1px solid #ccc;
     border-top: none;
@@ -73,16 +89,18 @@
 	div.dimg {
 	font-size : 0;
 	}
+	
 	p {
+	display: inline;
 	line-height: 150%;
 	}
 	
 	img {	
-	margin-top: -30px;
-	border: 2px solid #000000;
-	float: left;
-	transform: scale(0.65);
+		border: 1px solid #000000;
+		width:50%;
+		height:50%;
 	}
+	
 	</style>
 	</head>
 	<body>
@@ -110,123 +128,161 @@
 				<div class="main-row">
 				<h2>HOW TO USE PLANTVIZ</h2>
 				
+<p style="float:left;">To use the PlantViz, click on the <b>PlantViz</b> tab.<br/><br/>
+PlantViz provides a graphical user interface that enable users to query the POUM and a graphical viewer to display the results of the query in a form of network graph.
+The relationships between the data were shown in visualisation form that enables the users to infer the knowledge and correlation between the data easily. 
+</p>
+<figure>
+<img src="images/tut/howto1.png" alt="plantviz_tab" style="width:100%; height:100%"/>
+<figcaption>Figure 1</figcaption>
+</figure>
 <div class="tab">
-  <button class="tablinks" onclick="openTab(event, 'Query')" id="defaultOpen">Query</button>
-  <button class="tablinks" onclick="openTab(event, 'Vis')">Graphical result</button>
+  <button class="tablinks" onclick="openTab(event, 'Query')" id="defaultOpen">Search</button>
+  <button class="tablinks" onclick="openTab(event, 'Vis')">Graphical viewer</button>
 </div>
 
 <div id="Query" class="tabcontent">
-<br/><h3><b>Querying in PlantViz</b></h3><br/>
-<p>To use PlantViz, click on the PlantViz tab.</p>
-<img src="images/tut/howto1.png" alt="plantviz_tab" style="float: right;">
-<p>To start using PlantViz, users must first choose query parameter and then key in users search keyword or choose from option given. There are 4 query parameters available in PlantViz.</p>
-<img src="images/tut/howto2.png" alt="query_opt" style="margin-top: -30px;">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<p>For the meantime, users can only choose one parameter at a time.</p><br/><br/>
 
-<p><b>Scientific Name</b></p>
-<img src="images/tut/howto3.png" alt="query_1"><ul>
-<li>Keyword must start with uppercase letter for the genus name. Example : &ldquo;Ixora javanica&rdquo;</li>
-<li>Words must be separated with a <strong>single</strong> space. Example : &ldquo;Lawsonia inermis&rdquo;</li>
-<li><b>NO</b> extra spaces in the beginning or at the end of keyword.</li>
+<h3><b>Searching in PlantViz</b></h3>
+<br/>
+Searching in PlantViz is based on the four query parameter options which are 'Scientific Name', 'Family Name', 'Location', and 'Water Usage' (see Fig 2).
+</br></br></br>
+<ol>
+	<li>To start, users are required to select one of these query options at a time. Once the option is selected, users are required to key in a keyword (see Fig 2) or select relevant parameter from the given options in drop down list.</li>
+</ol>
+<figure>
+<img src="images/tut/howto2.png" alt="query_param"/>
+<figcaption style="text-align: center;">Figure 2</figcaption>
+</figure>
+<br/>
+<ol style="list-style-type: lower-roman;">
+<li><b>Scientific Name</b></li>
+</ol></br>
+<ul style="padding-left:30px">
+<li>The keyword must start with an uppercase letter for the genus name. Example: "<b>I</b>xora javanica"</li>
+<li>Words must be separated with a single space. Example: "Lawsonia<b>&lt;space&gt;</b>inermis"</li>
+<li><b>NO&nbsp;</b>extra space at the beginning or at the end of keyword.</li>
 </ul>
-<p>&nbsp;</p>
-<p><b>Family Name</b></p>
-<img src="images/tut/howto4.png" alt="query_1"><ul>
-<li>Keyword must start with uppercase letter. Example : &ldquo;Acanthaceae&rdquo;</li>
-<li><b>NO</b> extra spaces in the beginning or at the end of keyword.</li>
+<figure>
+<img src="images/tut/howto3.png" alt="sc_name"/>
+<figcaption style="text-align: center;">Figure 3</figcaption>
+</figure>
+<br/>
+<ol style="list-style-type: lower-roman;">
+<li value="2"><b>Family Name</b></li>
+</ol></br>
+<ul style="padding-left:30px">
+<li>The keyword must start with an uppercase letter for the genus name. Example: "<b>A</b>canthaceae"</li>
+<li><b>NO</b> extra space at the beginning or at the end of keyword.</li>
 </ul>
-<p>&nbsp;</p>
-<p><b>Location</b></p>
-<img src="images/tut/howto5.png" alt="query_1">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<ul>
-<li>Choose ONLY one from option given.</li>
+<figure>
+<img src="images/tut/howto4.png" alt="fam_name" />
+<figcaption style="text-align: center;">Figure 4</figcaption>
+</figure>
+<br/>
+<ol style="list-style-type: lower-roman;">
+<li value="3"><b>Location</b></li>
+</ol><br/>
+<ul style="padding-left:30px">
+<li>Select <b>ONLY ONE</b> from the given options.</li>
 </ul>
-<p>&nbsp;</p>
-<p><b>Water Usage</b></p>
-<img src="images/tut/howto6.png" alt="query_1">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<ul>
-<li>Choose ONLY one from option given.</li>
+<figure>
+<img src="images/tut/howto5.png" alt="location"/>
+<figcaption style="text-align: center;">Figure 5</figcaption>
+</figure>
+</br>
+<ol style="list-style-type: lower-roman;">
+<li value="4"><b>Water Usage</b></li>
+</ol></br>
+<ul style="padding-left:30px">
+<li>Select <b>ONLY ONE</b> from the given options.</li>
 </ul>
-<p>&nbsp;</p>
-<p>After that, click the button <b>Search</b> to start query or click button <b>Reset</b> to start over.</p>
-<p>Do not click button <b>Back</b> to start a new query.</p>
+<figure>
+<img src="images/tut/howto6.png" alt="water_usage"/>
+<figcaption style="text-align: center;">Figure 6</figcaption>
+</figure>
+<ol>
+<li value="2">Once the query parameter option is selected and keyword is entered, or an option in drop down list is selected, click on the <b>Search</b> button to start the searching.</li>
+<li>To start over, click on the <b>Reset</b> button.</li>
+<li>Please do not click on <b>Back</b> button to start a new query for searching.</li>
+</ol>
 </div>
 
 
 <div id="Vis" class="tabcontent">
 <br/><h3><b>Visualization Features</b></h3><br/>
-<p>PlantViz presents result of a query in graphical form to allow user to <i>see</i> the data 
-instead of reading it. Users are also able to interact directly with the data by using some 
-features available in the graphical viewer of PlantViz.
-</p>
-
-<p>Basic features of the graphical viewer include <b>zoom in</b>, <b>zoom out</b>, and <b>draggable</b>.</p><br/><br/>
-<b>1.&nbsp;&nbsp;&nbsp;View label of nodes</b>
+PlantViz presents the retrieved result of a query in a graphical form to allow user to <i>see</i> the relationships between the data 
+instead of reading it. Users are able to interact directly with the presented data by using the visualization features provided in PlantViz as well as basic features which include
+<b>zoom in</b>, <b>zoom out</b>, and <b>draggable</b>.
+<br/><br/><br/>
+<b>i.&nbsp;&nbsp;&nbsp;View the label of the nodes</b>
 <br/>
-<img src="images/tut/ft1.gif" alt="feature_1"><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/>
-<ol>
-<li>Hover on blue node.</li>
-<li>Wait until the label of that node appears.</li>
-<li>If it does not appear, click on the blue node and hover again.</li>
-<li><i>Note : other nodes may also have label.</i></li>
-</ol>
-<br/><br/><br/><br/><br/>
-
-<b>2.&nbsp;&nbsp;&nbsp;Highlight nodes</b>
+<p style="padding-left:30px;">The purpose of this feature is to allow user to view the label of the nodes.</p>
 <br/>
+<ul style="display:block; list-style-type:decimal; padding-left:30px;">
+<li>Hover the cursor on the <font size="5" color="#004bff">&bull;</font> node. </li>
+<li>Hold the cursor until the label on the node is appeared.</li>
+<li>If the label does not appear, click on the <font size="5" color="#004bff">&bull;</font> node and hover it again.</li>
+</ul>
+<p style="padding-left:30px;"><i>Note: The other nodes may also have labels</i></p>
+<br/>
+<figure>
+<img src="images/tut/ft1.gif" alt="feature_1" style="width:75%; height:75%"/>
+<figcaption style="text-align: center;">Figure 1</figcaption>
+</figure>
+<br/>
+<ol style="list-style-type: lower-roman; display:left">
+<li value="2"><b>Highlight the nodes</b></li>
+</ol><br/>
+<p style="padding-left:30px;">The purpose of this feature is to show relationships between the data.</p>
+<br/>
+<ul style="list-style-type:decimal; padding-left:30px; clear:both;">
+<li>Hover the cursor on any node</li>
+<li>The links that connected the nodes will be highlighted in purple colour</li>
+</ul>
+<figure>
 <img src="images/tut/ft2.png" alt="feature_2">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<p>The purpose of this features is to show relationship between data.</p>
-
-<ol>
-<li>Hover to any node.</li>
-<li>Any links that connected to that node will be highlighted in purple.</li>
-</ol>
-<br/><br/><br/><br/><br/>
-<b>3.&nbsp;&nbsp;&nbsp;Expand and shrink graph</b>
-<br/><br/><br/>
-<img src="images/tut/ft3a.gif" align="left "alt="feature_3a">
-<img src="images/tut/ft3b.gif" align="right" alt="feature_3b">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<p>This feature is to avoid clutter in the graph. It also helps users to focus on a part of the graph.</p>
-<ol>
-<li>To expand or shrink the graph, double click on any <font size="5" color="#ff9642">&bull;</font> node</li>
-<li>To shrink the graph, double click on any <font size="5" color="#ff006a">&bull;</font> node</li>
-</ol>
-<br/><br/><br/><br/><br/>
-<b>4.&nbsp;&nbsp;&nbsp;View thumbnail images of plant sample</b>
+<figcaption style="text-align: center;">Figure 2</figcaption>
+</figure>
+<br/><br/><b>3.&nbsp;&nbsp;&nbsp;Expand and shrink the network graph</b><br/>
+<p style="padding-left:30px;">The purpose of this feature is to avoid cluttered nodes in the network graph. It also helps users to focus on a part of the presented data.</p>
+<ul style="list-style-type:decimal; padding-left:30px;">
+<li>To expand or shrink the network graph, double click on the <font size="5" color="#ff9642">&bull;</font> node</li>
+<li>To shrink the graph, double click on the <font size="5" color="#ff006a">&bull;</font> node</li>
+</ul>
+<figure>
+<img src="images/tut/ft3a.gif" alt="feature_3a" style="width:75%; height:75%"/>
+<figcaption style="text-align: center;">Figure 3 - Shrinking the network graph</figcaption>
+</figure>
+<figure>
+<img src="images/tut/ft3b.gif" alt="feature_3b" style="width:75%; height:75%"/>
+<figcaption style="text-align: center;">Figure 4 - Expanding the network graph</figcaption>
+</figure>
 <br/><br/>
-<img src="images/tut/ft4.gif" alt="feature_4">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-
-<p>Users can view thumbnail images(s) of some plant sample(s).</p>
-<ol>
-<li>Hover on any node with sample ID.</li>
-<li>A popup with thumbnail image(s) will appear.</li>
-</ol>
-<br/><br/><br/>
-<b>5.&nbsp;&nbsp;&nbsp;View full information of plant image</b>
+<b>4.&nbsp;&nbsp;&nbsp;View the thumbnail images of plant sample</b>
+<br/>
+<p style="padding-left:30px;">The purpose of this feature is to view the thumbnail image(s) of some plant sample(s).</p>
+<br/>
+<ol style="padding-left:30px;">
+<li>Hover the cursor on the node with the sample ID.</li>
+<li>A popup with thumbnail image(s) will be appeared.</li>
+</ol><br/><br/>
+<figure>
+<img src="images/tut/ft4.gif" alt="feature_4" style="width:75%; height:75%"/>
+<figcaption style="text-align: center;">Figure 5</figcaption>
+</figure>
 <br/><br/>
-<p>Users are able to view full information of plant samples.</p>
-
-<img src="images/tut/ft5.gif" alt="feature_5">
-<br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/><br/>
-<br/><br/><br/><br/><br/><br/>
-
-<ol>
-<li>Hover on node <b>Sample</b>.</li>
-<li>A popup “More detail” will appear.</li>
-<li>Click on the popup. Users will be directed to a new page containing full information of the plant sample.</li>
+<b>5.&nbsp;&nbsp;&nbsp;View the full information of plant image</b>
+<br/>
+<p style="padding-left:30px;">The purpose of this feature is to view full information of selected plant samples.</p>
+<ol style="padding-left:30px;">
+<li>Hover the cursor on <b>Sample</b> node.</li>
+<li>Click on the <b>Sample details</b> node and users will be directed to a new page containing full information of the selected plant sample.</li>
 </ol>
-
+<figure>
+<img src="images/tut/ft5.png" alt="feature_5" style="width:75%; height:75%"/>
+<figcaption style="text-align: center;">Figure 6</figcaption>
+</figure>
 </div>
 </div>
 <script type="text/javascript">
